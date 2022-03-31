@@ -1,2 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;900&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+* {
+	-webkit-transition-property: all;
+	-webkit-transition-duration: .2s;
+  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+	-moz-transition-property: all;
+  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+}
+
+body{
+  background:#1b1b2b;
+  font-family: 'Oswald', sans-serif;
+  width: auto;
+  
+}
+
+
+
+nav{
+    margin-top: -70px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.801);
+    height: 80px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.menu li{
+    display:inline-block;
+    margin: 20px;
+   
+    
+}  
+
+
+.btn{
+  color:rgba(255, 255, 255, 0.897);
+  background-color: rgba(0, 0, 0, 0);
+  padding:10px 18px;
+  font-size:13px;
+  text-decoration:none;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  display: inline-flex;
+ 
+  margin-left: 10px;
+}
+
+.btn:hover{
+  border:none;
+  color:rgba(0, 0, 0, 0.596);  
+  background:#fff;
+  padding:20px 18px; #000;
+  
+  
+}
+
+.btn:active{
+    border:none;
+    color:rgba(0, 0, 0, 0.596);  
+    background:rgba(255, 255, 255, 0.137);
+    
+    
+  }
+  
+  
+.bandcamp{
+    color:rgba(255, 255, 255, 0.897);
+    background-color: rgba(0, 0, 0, 0);
+    padding:10px 22px;
+    font-size:13px;
+    text-decoration:none;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    margin-left: 100px;
+   
+    
+  }
+
+.bandcamp:hover{
+    border:none;
+    color:rgba(0, 0, 0, 0.596);  
+    background:#fff;
+    padding:20px 22px; #000;
+    
+    
+  }
+  
