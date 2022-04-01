@@ -1,59 +1,145 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;900&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
 
-* {
-	-webkit-transition-property: all;
-	-webkit-transition-duration: .2s;
-  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
-	-moz-transition-property: all;
-  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+@font-face {
+    font-family:'fontecrystal' ;
+    src: url('fonte2.ttf');
 }
 
+
+
 body{
-  background:#1b1b2b;
+  background:#000000d5;
   font-family: 'Oswald', sans-serif;
   width: auto;
+  height: 100%;
+  overflow: hidden;
   
 }
 
 
 
 nav{
-    margin-top: -70px;
+    margin-top: -20px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.801);
-    height: 80px;
-    text-align: center;
+    height:80px;
+    
     padding-bottom: 5px;
 }
 
 .menu li{
     display:inline-block;
-    margin: 20px;
+    
+} 
+
+
+
+h1 a{
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.329);
+    text-decoration: none;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(0, 0, 0), rgb(178, 0, 248), rgb(0, 0, 0)) ;
    
     
-}  
+    -webkit-background-clip: text; 
+    
+    animation: animate 10s  infinite; 
+    background-size: 1000%;
+}
+
+
+
+
+
+@keyframes animate{
+    
+    0%{
+    background-position: 0% 100%;
+    }
+
+    50%{
+        background-position: 100% 0%;
+    }
+
+    100%{
+        background-position: 0% 100%;
+    }
+}
+
+
+
+
+
+
+h1 a:after {
+    content: "";
+    background: #737473c4;
+    display: block;
+    position: absolute;
+    padding-top: 152%;
+    padding-left: 40%;
+    margin-left: 0px !important;
+    margin-top: -150%;
+    opacity: 0;
+    transition: all 0.8s
+}
+  
+h1 a:active{
+    border:none;
+    
+    background:rgba(255, 255, 255, 0.349);
+    
+    
+}
+h1 a:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+
+
+.init{
+    display:inline-block;
+    margin-right:5%;
+    margin-top: 2.4%;
+    font-family: fontecrystal;
+    color:#055830;
+
+    text-decoration: none;
+}
+
+
 
 
 .btn{
   color:rgba(255, 255, 255, 0.897);
   background-color: rgba(0, 0, 0, 0);
-  padding:10px 18px;
-  font-size:13px;
+  padding:17px 40px;
   text-decoration:none;
   letter-spacing:3px;
   text-transform:uppercase;
-  display: inline-flex;
+  cursor: pointer;
+  font-size: 14px;
  
-  margin-left: 10px;
+  position: relative;
+  border: none;
+  
+  transition-duration: 0.4s;
+  overflow: hidden;
+  box-shadow: 0 5px 15px #193047;
+  border-radius: 2px;
+  
 }
 
 .btn:hover{
   border:none;
   color:rgba(0, 0, 0, 0.596);  
   background:#fff;
-  padding:20px 18px ;
- 
+  padding:22px 40px ;
+  box-shadow: 0px 2px 10px 5px #1abc9c;
 }
 
 .btn:active{
@@ -62,26 +148,82 @@ nav{
     background:rgba(255, 255, 255, 0.137);
     
     
-  }
+}
+.btn:after {
+    content: "";
+    background: #1abc9c;
+    display: block;
+    position: absolute;
+    padding-top: 190%;
+    padding-left: 150%;
+    margin-left: 0px !important;
+    margin-top: -150%;
+    opacity: 0;
+    transition: all 0.8s
+}
   
+.btn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
   
-.bandcamp{
+.btn:focus { 
+    outline:0; 
+}
+  
+
+
+  .bandcamp{
     color:rgba(255, 255, 255, 0.897);
     background-color: rgba(0, 0, 0, 0);
-    padding:20px 22px;
-    font-size:13px;
+    padding:14px 40px;
+    margin-left: 55px;
     text-decoration:none;
     letter-spacing:3px;
     text-transform:uppercase;
-    margin-left: 100px;
-   
+    cursor: pointer;
     
-  }
-
+    
+    position: relative;
+    border: none;
+    
+    transition-duration: 0.4s;
+    overflow: hidden;
+    box-shadow: 0 5px 15px #193047;
+    border-radius: 2px;
+  
+}
 .bandcamp:hover{
     border:none;
     color:rgba(0, 0, 0, 0.596);  
     background:#fff;
-    padding:20px 22px #000;
+    padding:22px 40px ;
+    box-shadow: 0px 2px 10px 5px #1abc9c;
 }
-  
+.bandcamp:active{
+    border:none;
+    color:rgba(0, 0, 0, 0.596);  
+    background:rgba(255, 255, 255, 0.137);
+    
+    
+}
+.bandcamp:after {
+    content: "";
+    background: #1abc9c;
+    display: block;
+    position: absolute;
+    padding-top: 190%;
+    padding-left: 150%;
+    margin-left: 20px !important;
+    margin-top: -150%;
+    opacity: 0;
+    transition: all 0.8s
+}
+.bandcamp:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
